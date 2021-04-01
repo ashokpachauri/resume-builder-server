@@ -9,11 +9,11 @@ var path= require('path')
 
 const MongoClient = require('mongodb').MongoClient
 
-const env = require('../.env.js');
-
-MongoClient.connect(env.connectionString, { useUnifiedTopology: true })
+//const env = require('../.env.js');
+const mongoUri = "mongodb+srv://ropeyou:ropeyou@cluster0.6in7c.mongodb.net/ryresume?retryWrites=true&w=majority";
+MongoClient.connect(mongoUri, { useUnifiedTopology: true })
 .then(client => {
-    const db = client.db('wtf-resume')
+    const db = client.db('ryresume')
     const quotesCollection = db.collection('pdf')
 
     

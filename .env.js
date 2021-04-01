@@ -1,0 +1,1 @@
+var connectionString="mongodb+srv://ropeyou:Barkha#2019@cluster0.6in7c.mongodb.net/ryresume?retryWrites=true&w=majority";
